@@ -1,16 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Biker Zone</title>
 </head>
 
-<body>
+<body class="font-poppins">
 
     <header>
 
+        <nav>
+            <div class="hidden lg:block">
+                <div class="flex items-center justify-between w-4/5 mx-auto mt-12 ">
+                    <h2 class="text-4xl font-bold text-black ">
+                        Bike Dekho
+                    </h2>
+                    <div class="flex items-center justify-between gap-8 font-medium text-black">
+                        <a href="">Home</a>
+                        <a href="">Shop</a>
+                        <a href="">News</a>
+                        <a href="">Contact</a>
+                        <button class="btn btn-primary bg-[#E76F51] border-none text-white text-xl font-bold">
+                            Login
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white navbar rounded-box lg:hidden">
+                <div class="flex-1 px-2 lg:flex-none">
+                    <a class="text-lg font-bold">
+                        Bike Dekho
+                    </a>
+                </div>
+                <div class="flex justify-end flex-1 px-2">
+                    <div class="flex items-stretch">
+
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost rounded-btn">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu dropdown-content z-[1] text-black font-medium p-2 shadow bg-base-100 rounded-box w-52 mt-4 text-center">
+                                <a href="">Home</a>
+                                <a href="">Shop</a>
+                                <a href="">News</a>
+                                <a href="">Contact</a>
+                                <button class="btn btn-primary bg-[#E76F51] border-none text-white text-base font-bold">
+                                    Login
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
